@@ -9,3 +9,13 @@ const squadreCalcio = [
 ];
 
 console.table(squadreCalcio);
+
+const squadreNomiFalli = [];
+
+// scorro l'array originale
+for (const squadra of squadreCalcio) {
+  // inserisco nel nuovo array solo nomi e falli
+  squadreNomiFalli.push({ nome: squadra.nome, falliSubiti: squadra.falliSubiti });
+}
+
+console.table(squadreNomiFalli);
